@@ -20,8 +20,8 @@
     // enable sessions
     session_start();
 
-    // require authentication for most pages
-    if (!preg_match("{(?:login|logout|register)\.php$}", $_SERVER["PHP_SELF"]))
+    // require authentication for few pages
+    if (!preg_match("{(?:login|register|logout|products|index|track)\.php$}", $_SERVER["PHP_SELF"]))
     {
         if (empty($_SESSION["id"]))
         {
