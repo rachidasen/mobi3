@@ -219,4 +219,30 @@
         }
     }
 
+    function render2($template,$template2, $values = [])
+    {
+        // if template exists, render it
+        if (file_exists("../templates/$template"))
+        {
+            // extract variables into local scope
+            extract($values);
+
+            // render header
+            require("../templates/header.php");
+
+            // render template
+            require("../templates/$template");
+            require("../templates/$template2");
+
+            // render footer
+            require("../templates/footer.php");
+        }
+
+        // else err
+        else
+        {
+            trigger_error("Invalid template: $template", E_USER_ERROR);
+        }
+    }
+
 ?>
