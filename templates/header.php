@@ -21,7 +21,30 @@
     </head>
 
     <body>
-        <nav class=
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="tablist">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+            <li role="presentation" class="active"><a href="/">Home</a></li>
+            <li role="presentation"><a href="products.php">PRODUCTS</a></li>
+            <li role="presentation"><a href="track.php">TRACK-ORDER</a></li>
+            <li role="presentation"><a href="../templates/contact.php">CONTACT-US</a></li>
+            </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <header id="top">
+                         <a href="/"><img alt="MOBI3" src="/img/logo.gif"/></a>
+            </header>
+            <div id="middle">
 
     
         

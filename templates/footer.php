@@ -1,11 +1,9 @@
             </div>
-
-            <div id="bottom">
-                Copyright &#169; John Harvard
-            </div>
-
-        </div>
-       
+                  
+     <footer id="bottom">
+        	Copyright &#169; mobi3
+        </footer>
+    </div>   
     </body>
 
 </html>

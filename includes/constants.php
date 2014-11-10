@@ -10,7 +10,7 @@
      */
 
     // your database's name
-    define("DATABASE", "mobi3");
+    define("DATABASE", "mobiledb");
 
     // your database's password
     define("PASSWORD", "tiger");

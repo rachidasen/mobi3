@@ -6,7 +6,13 @@
  *
  * Global CSS.
  */
-
+body{
+    padding-top: 70px;
+}
+header
+{
+    text-align: left;
+}
 .container
 {
     /* center contents */
