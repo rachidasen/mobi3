@@ -49,3 +49,8 @@ header
     background-position: abslute;
     top: 60%;
 }
+
+#left
+{
+    margin-left: 0px;
+}
