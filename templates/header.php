@@ -38,14 +38,19 @@
             <li role="presentation"><a href="track.php">TRACK-ORDER</a></li>
             <li role="presentation"><a href="../templates/contact.php">CONTACT-US</a></li>
             <li role="presentation"><?php
-                    if(preg_match("{(?:login|register)\.php$}",$_SERVER["PHP_SELF"])){
-                        if(isset($_SESSION["id"]))
-                            echo "<a href=\"logout.php\">Logout</a>";
-                        else
-                            echo "<a href=\"login.php\">Login</a>";
-                    } else
-                        echo "<a href=\"logout.php\">Logout</a>";
+                   if(isset($_SESSION["id"]))
+                            echo "<a href=\"logout.php\">LOGOUT</a>";
+                    else
+                        echo "<a href=\"login.php\">LOGIN</a>";
             ?></li>
+            <?php
+                if(isset($_SESSION["id"])){
+                    echo "<li role=\"presentation\"><a href=\"cart.php\">CART</a></li>";
+                    echo "<li role=\"presentation\"><a href=\"feedback.php\">FEEDBACK</a></li>";
+                }
+
+            ?>
+
             </ul>
             </div>
         </nav>
