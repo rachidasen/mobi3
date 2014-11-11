@@ -37,6 +37,15 @@
             <li role="presentation"><a href="products.php">PRODUCTS</a></li>
             <li role="presentation"><a href="track.php">TRACK-ORDER</a></li>
             <li role="presentation"><a href="../templates/contact.php">CONTACT-US</a></li>
+            <li role="presentation"><?php
+                    if(preg_match("{(?:login|register)\.php$}",$_SERVER["PHP_SELF"])){
+                        if(isset($_SESSION["id"]))
+                            echo "<a href=\"logout.php\">Logout</a>";
+                        else
+                            echo "<a href=\"login.php\">Login</a>";
+                    } else
+                        echo "<a href=\"logout.php\">Logout</a>";
+            ?></li>
             </ul>
             </div>
         </nav>

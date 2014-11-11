@@ -21,6 +21,8 @@
     session_start();
 
     // require authentication for few pages
+    
+
     if (!preg_match("{(?:login|register|logout|products|index|track)\.php$}", $_SERVER["PHP_SELF"]))
     {
         if (empty($_SESSION["id"]))
@@ -28,9 +30,11 @@
             redirect("login.php");
         }
     }
-    if(preg_match("{(?:login|register)\.php$}",$_SERVER["PHP_SELF"])){
+
+     if(preg_match("{(?:login|register)\.php$}",$_SERVER["PHP_SELF"])){
             if(isset($_SESSION["id"]))
-                        redirect("home.php");
+                redirect("index.php");
     }
+   
 
 ?>
