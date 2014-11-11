@@ -14,11 +14,11 @@
                 	apologize("USERNAME ALREADY REGISTERED");
 				}
 				else{
-					$rows=query("SELECT LAST_INSERT_ID() AS id");
+					$rows=query("SELECT LAST_INSERT_ID() AS cid");
 					$id = $rows[0]["cid"];
 					//logging userx
 					$_SESSION["id"] = $id;
-					echo "you logiined successfuly <br \>";
+					echo "you logiined successfuly".$id."<br\>";
 					print "id ".$_SESSION["id"];
 					redirect("/");
 				}

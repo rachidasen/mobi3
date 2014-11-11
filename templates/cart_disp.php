@@ -10,16 +10,24 @@
 					<tr>
 						<td><?=$prod["name"]." ".$prod["model"]?></td>
 						<td><?=$prod["price"]?></td>
-					</tr>					
+					
+						<td>	
+					<form action="track.php" method="POST">
+							<input type="hidden" name="del" value="del" />
+								<button type="button" class="btn btn-xs btn-danger">
+								  <span class="glyphicon glyphicon-remove"></span>;
+								</button>
+					</form>		
+
+					</td>
+					</tr>
 				<?php endforeach ?>
 				<tr>
 					<th>TOTAL PRICE</th>
 					<th><?=$total?></th>
 					<th>
-						<form action="buy.php" method="POST">
-							<input type="hidden" name="del" value="del" />
-							<input type="submit" class="btn btn-primary" value="BUY" />
-						</form>
+						<a href="buy.php" class="btn btn-primary">BUY </a>
+						
 					</th>
 
 				</tr>
