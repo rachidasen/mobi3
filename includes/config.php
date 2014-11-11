@@ -28,5 +28,9 @@
             redirect("login.php");
         }
     }
+    if(preg_match("{(?:login|register)\.php$}",$_SERVER["PHP_SELF"])){
+            if(isset($_SESSION["id"]))
+                        redirect("home.php");
+    }
 
 ?>

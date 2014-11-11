@@ -6,9 +6,12 @@
 			<div class="col-xs-3 lg-7">
 				<div class="thumbnail">
 					<?php $name="/img/pictures/".$row["P_mimg"]; ?>
-					<a href="#"><img src=<?=$name?> alt="" class="img-responsive">
-					<pre><?=$row["model"]?></pre></a>
-
+					<a href="#"><img src=<?=$name?> alt="" class="img-responsive"></a>
+					<p class="caption"><?=$row["model"]?></p>
+						<div class="row"><?=$row["price"]?></div>
+					<form method="POST" action="cart.php">
+							
+					</form>
 				</div>
 			</div>
 

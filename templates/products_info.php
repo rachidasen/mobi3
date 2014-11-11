@@ -7,5 +7,6 @@
 	<li><a href="/products.php?name=KARBON">KARBON</a></li>
 	<li><a href="/products.php?name=MICROMAX">MICROMAX</a></li>
 	<li><a href="/products.php?name=NOKIA">NOKIA</a></li>
+	<li><a href="/products.php?name=SAMSUNG">SAMSUNG</a></li>
 </ul>
 </div>
