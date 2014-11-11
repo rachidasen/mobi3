@@ -10,7 +10,9 @@
 					<p class="caption"><?=$row["model"]?></p>
 						<div class="row"><?=$row["price"]?></div>
 					<form method="POST" action="cart.php">
-							
+						<input type="hidden" name="pid" value="<?=$row["pid"]?>" />
+						<input type="submit" class="btn btn-primary btn-justified" value="Add-tocart" />
+												
 					</form>
 				</div>
 			</div>
