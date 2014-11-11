@@ -13,7 +13,7 @@
             <input class="form-control" name="city" placeholder="City" type="text"/>
         </div>
         <div class="form-group">
-            <input class="form-control" name="phone" placeholder="Phone number" type="number" maxlength="10" />
+            <input class="form-control" name="phone" placeholder="Phone number" type="tel" maxlength="10" />
         </div>
         <div class="form-group">
             <button type="submit" class="btn btn-default">REGISTER</button>

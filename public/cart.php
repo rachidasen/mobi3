@@ -2,14 +2,14 @@
 	require("../includes/config.php");
 	if($_SERVER["REQUEST_METHOD"]=="POST"){
 			if($_POST["del"]==="del"){
-				query("DELETE FROM cart WHERE cartid = ?",$cartid);
-				echo "hi";
-				//redirect("/cart.php");
+				query("DELETE FROM cart WHERE cartid = ?",$_SESSION["cartid"]);
+				redirect("/cart.php");
 			}
 			else{
 				query("INSERT INTO CART (cid,pid,qty) values(?,?,1)",$_SESSION["id"],$_POST["pid"]);
 				$r=query("SELECT LAST_INSERT_ID() AS cartid");
 				$cartid=$r[0]["cartid"];
+				$_SESSION["cartid"]=$cartid;
 				redirect("/products.php");
 			}
 

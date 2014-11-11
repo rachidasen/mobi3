@@ -12,9 +12,9 @@
 						<td><?=$prod["price"]?></td>
 					
 						<td>	
-					<form action="track.php" method="POST">
+					<form action="cart.php" method="POST">
 							<input type="hidden" name="del" value="del" />
-								<button type="button" class="btn btn-xs btn-danger">
+								<button type="submit" class="btn btn-xs btn-danger">
 								  <span class="glyphicon glyphicon-remove"></span>;
 								</button>
 					</form>		
