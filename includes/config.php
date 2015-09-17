@@ -3,8 +3,8 @@
     /**
      * config.php
      *
-     * Computer Science 50
-     * Problem Set 7
+     * MOBI SHOP3
+     * Project DBMS LAB
      *
      * Configures pages.
      */
